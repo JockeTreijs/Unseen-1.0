@@ -34,7 +34,7 @@ public class CameraFollow : MonoBehaviour
             transform.position = new Vector3(0, 0, -10);
             myCamera.orthographicSize = 8.0f;
             yield return new WaitForSeconds(5.0f);
-            myCamera.orthographicSize = 3.5f;
+            myCamera.orthographicSize = 4.0f;
             zoomedIn = true;
         }  
     }

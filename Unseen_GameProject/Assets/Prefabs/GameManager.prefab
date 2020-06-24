@@ -43,10 +43,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 00f13dc7db709ea4dac58c9856a6754c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  darkMap: {fileID: 685559795552654748, guid: 2462b318f76328c439a860020658782a, type: 3}
-  blurredMap: {fileID: 4089818277952976510, guid: 8ef98aeee037640449416a6ece84d856,
-    type: 3}
-  backgroundMap: {fileID: 6307845048746504332, guid: af08e5264a7a62741845bf0be5fe1883,
-    type: 3}
+  darkMap: {fileID: 0}
+  blurredMap: {fileID: 0}
+  backgroundMap: {fileID: 0}
   darkTile: {fileID: 11400000, guid: b9b068101234d7942b55c2c172472bb9, type: 2}
   blurredTile: {fileID: 11400000, guid: ce35f611ff296f642a983809fe6b44ec, type: 2}
