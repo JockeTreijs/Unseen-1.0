@@ -2,12 +2,14 @@
 using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Key : MonoBehaviour
 {
     public bool gotKey;
     public GameObject invisiblePlatform;
     public GameObject canvas;
+    public GameObject keyUI;
 
 
     // Start is called before the first frame update
@@ -26,9 +28,10 @@ public class Key : MonoBehaviour
     {
         if (other.gameObject.tag == "Player")
         {
-            this.gameObject.transform.parent = canvas.transform;
+            keyUI.SetActive(true);
             invisiblePlatform.gameObject.SetActive(true);
             gotKey = true;
+            this.gameObject.SetActive(false);
         }
     }
 }

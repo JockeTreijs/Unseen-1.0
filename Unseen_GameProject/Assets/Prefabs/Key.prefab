@@ -206,3 +206,4 @@ MonoBehaviour:
   gotKey: 0
   invisiblePlatform: {fileID: 0}
   canvas: {fileID: 0}
+  keyUI: {fileID: 0}
