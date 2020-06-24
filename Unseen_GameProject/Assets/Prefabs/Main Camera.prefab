@@ -97,5 +97,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
-  smoothSpeed: 0.125
+  smoothSpeed: 0.1
   offset: {x: 0, y: 1, z: -10}
+  myCamera: {fileID: 7713237541378450912}
