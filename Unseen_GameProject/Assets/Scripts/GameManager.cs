@@ -19,6 +19,7 @@ public class GameManager : MonoBehaviour
     private Button mainMenuButton;
     private Button tryAgainButton;
     private Button quitButton;
+    private Button beginButton;
 
     // Start is called before the first frame update
     void Start()
@@ -50,6 +51,9 @@ public class GameManager : MonoBehaviour
 
         quitButton = GameObject.Find("QuitButton").GetComponent<Button>();
         quitButton.onClick.AddListener(MainMenu);
+
+        beginButton = GameObject.Find("BeginButton").GetComponent<Button>();
+        beginButton.onClick.AddListener(BeginGame);
     }
 
     // Update is called once per frame
@@ -60,7 +64,7 @@ public class GameManager : MonoBehaviour
 
     public void StartGame()
     {
-        SceneManager.LoadScene("Game");
+        SceneManager.LoadScene("Story");
     }
 
     public void ExitGame()
@@ -76,5 +80,10 @@ public class GameManager : MonoBehaviour
     public void MainMenu()
     {
         SceneManager.LoadScene("Start");
+    }
+
+    public void BeginGame()
+    {
+        SceneManager.LoadScene("Game");
     }
 }
