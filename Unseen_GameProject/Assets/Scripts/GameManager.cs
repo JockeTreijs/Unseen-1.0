@@ -47,7 +47,7 @@ public class GameManager : MonoBehaviour
         mainMenuButton.onClick.AddListener(MainMenu);
 
         tryAgainButton = GameObject.Find("TryAgainButton").GetComponent<Button>();
-        tryAgainButton.onClick.AddListener(StartGame);
+        tryAgainButton.onClick.AddListener(BeginGame);
 
         quitButton = GameObject.Find("QuitButton").GetComponent<Button>();
         quitButton.onClick.AddListener(MainMenu);
